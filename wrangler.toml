@@ -1,4 +1,4 @@
-name = "nextdrop-cdn"
+name = "nextdrop-cdn-worker"
 main = "src/worker.js"
 compatibility_date = "2025-01-01"
 
@@ -10,5 +10,5 @@ bucket_name = "ai-content-storage-bucket"
 ALLOWED_DOMAINS_URL = "https://api.nextdrop.nl/cdn/allowed-domains"
 
 routes = [
-	{ pattern = "cdn.nextdrop.nl/*", zone_name = "nextdrop.nl" }
+	{ pattern = "cdn.nextdrop.nl", custom_domain = true }
 ]
