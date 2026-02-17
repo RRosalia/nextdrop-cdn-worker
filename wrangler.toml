@@ -9,6 +9,6 @@ bucket_name = "ai-content-storage-bucket"
 [vars]
 ALLOWED_DOMAINS_URL = "https://api.nextdrop.nl/cdn/allowed-domains"
 
-routes = [
-	{ pattern = "cdn.nextdrop.nl", custom_domain = true }
-]
+[[routes]]
+pattern = "cdn.nextdrop.nl"
+custom_domain = true
